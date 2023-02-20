@@ -101,6 +101,7 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    min-height: 800px;
 }
 
 .hero-container-texts {
@@ -145,7 +146,7 @@ body {
 
 .hero-container-image {
     margin-left: 40px;
-    width: 30%;
+    width: 25%;
     height: 80%;
     background-image: url('./Assets/Images/coke.svg');
     background-repeat: no-repeat;
@@ -157,7 +158,7 @@ body {
 
 
 .hero-container-texts-b:hover {
-    background-color: #3F4240;
+    background-color: #000000;
     cursor: pointer;
 }
 
@@ -176,3 +177,87 @@ body {
     color: #3F4240;
 }
 
+
+/**     MEDIA QUERIES   **/
+
+@media (max-width: 1200px) {
+    .nav-container-navlink-p,
+    .nav-container-navlink-p2 {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-container-image {
+        display: none;
+    }
+    .hero-container-texts-image-hidden {
+        height: 30%;
+        background-image: url('./Assets/Images/coke.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transform: rotate(5deg);
+        margin-top: 20px;
+    }
+    .hero-container-texts {
+        width: 100%;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+    }
+    .hero-container {
+        align-items: start;
+    }
+    .hero-container-texts {
+        margin-top: 7%;
+        height: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-container-texts-title {
+        font-size: 4.5rem;
+    }
+    .hero-container-texts-p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-container-texts-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-container-texts {
+        padding: 0 20px;
+    }
+    .hero-container-texts-b {
+        height: 39px;
+        width: 195px;
+    }
+    .hero-container-texts-b-text {
+        font-size: 1.2rem;
+    }
+    .nav-container-logo-coca {
+        font-size: 2rem;
+    }
+    .nav-container-logo-tag {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-container-texts-title {
+        font-size: 2.7rem;
+    }
+    .hero-container-texts-p {
+        font-size: 1.4rem;
+    }
+    .hero-container-texts {
+        padding: 0 5px;
+    }
+}
